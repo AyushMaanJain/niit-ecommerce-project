@@ -1,0 +1,564 @@
+body{
+    margin: 0px;
+}
+.head {
+float:left;
+width:100%;
+padding:15px 20px;
+top:0;
+left: 0;
+position: fixed;
+}
+
+.message{
+    width: 100%;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  @keyframes example {
+  0%   {transform: rotate(0deg)}
+  100% {transform: rotate(720deg);}
+  
+}
+.loader{
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    height:65px;
+    width: 65px;
+}
+.Pname {
+margin-left:35px;
+float: left;
+font-size: 25px;
+}
+.options {
+margin-right:10px; 
+float: right;
+font-size: 20px;
+}
+.popbase a{
+    display:  inline-block;
+}
+.options a span{
+padding:0px 20px 0px 5px;
+text-decoration:none;
+}
+
+.slideToggle{
+    display: none;
+    padding:0px 8px 2px 8px;
+    margin-right: 20px;
+    float: left;
+    font-size: 20px;
+}
+.popup{
+    display: none;
+    padding:7px 10px;
+    margin-right: 35px;
+    float: right;
+    font-size: 40px;
+    left:0;
+}
+.searchToggle{
+    display: none;
+    padding:7px 10px;
+    margin-right: 10px;
+    float: right;
+    font-size: 40px;
+    left:0;
+}
+
+.slidenav {
+  height:100vh;
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  left: 0; /* Black*/
+  padding-top: 15px; /* Place content 60px from the top */
+ padding-bottom: 100px;/* Place content 60px from the top */
+  transition: 0.5s;
+}
+
+.slidenav a{
+    padding: 8px 8px 8px 32px;
+  display: block;
+  transition: 0.3s;
+}
+.slidenav span{
+padding: 0px 0px 70px 0px;
+}
+.slidenav:first-child{
+    padding-top:70px;
+}
+.body{
+    float:left;
+    left:0;
+    top:0;
+    width: 100%;
+    position: static;
+    padding-top: 60px;
+    margin-left:250px;
+    
+}
+.body[at="id"]{
+    position: fixed;
+    margin-left: -8px;
+    top:60px;
+    float:left;
+    margin-left:0px;
+    width:100%;
+}
+.body .form{
+    float: right;
+    margin-right:20px;
+    margin-top:20px;
+    padding:20px 40px;
+    transition: 1s;
+}
+.body .form h2{
+    margin:10px;
+    
+}
+.body p{
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+}
+.popsize{
+    margin:20px 40px;
+    font-size: 15px;
+    padding:3px 13px; 
+    border-radius:5px;
+}
+
+#Login,#register{
+    float: left;
+}
+#Login form,#register form{
+    float: left;
+}
+#Login form message,#register form message{
+    border:2px #f00 solid;
+    background: #f00;
+    color:#fff;
+    
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    margin-bottom: 20px;
+    border-radius:5px 5px 5px 5px;
+    width: 300px;
+   
+}
+message:before{
+    content: "";
+    float: left;
+    font-size:0px;
+    border:solid 5px rgba(0,0,0,0);
+    border-top:0;
+    border-bottom:solid 10px #f00;
+    margin-top: -15px;
+    
+    
+}
+.form form textarea{
+    resize: none;
+    height: 35vh;
+}
+.form form input,.form form textarea{
+    float:left;
+    width:300px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    padding:10px 15px;
+}
+.form form button{
+    float:right;
+    margin-bottom: 10px;
+    font-size: 15px;
+    
+    padding:10px 15px;
+}
+#register form a,#Login form a{
+    float:left;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    padding:10px 15px;    
+}
+
+.outer{
+    width: 230px;
+    padding-left: 50px;
+}
+.outer button{
+    width:50px;
+    margin:0px 2px;
+    font-size:25px;
+    padding: 10px;
+}
+.searchBox input{
+    padding-left:5px;
+    width:87%;
+}
+.searchBox {
+float: right;
+padding:10px 15px;
+width: 100%;
+}
+
+.searchCon{
+    float: right;
+    margin-top: -8px;
+    margin-right: 35px;
+    padding: 0;
+    width: 30%;
+}
+.searchCon .fa-arrow-left{
+    display:none;
+    margin-top: 8px;
+}
+
+.carousel_container {
+width: calc(100%-100px);
+height:auto;
+margin:50px;
+}
+.image {
+float:left;
+width:56%;
+height: 100%;
+}
+
+.carousel_picture{
+float: left;
+height:100%;
+transition:0.3s;
+}
+.carousel_picture[active="true"]{
+    width:100%;
+}
+.carousel_picture[active="false"]{
+    width:0%;
+}
+.carousel_picture img{
+    width: 100%;
+    height:100%;
+}
+
+.desc {
+float:left;
+width:44%;
+height: 100%;
+transition: 0.4s;
+}
+
+.arrows{
+    width: auto;
+    padding:20px;
+    -khtml-user-select: none;
+    -moz-user-select:none;
+    -webkit-user-select: none;
+}
+.arrows span.fa-arrow-left,.arrows span.fa-arrow-right{
+    width:10%;
+    font-size:25px;
+    padding-right:10px;
+}
+.dots{
+    float:right;   
+}
+.dots .circle{
+    float:right;
+    height: 10px;
+    width: 10px;
+    
+    
+    border-radius:5px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.circle[active="false"]{
+        background: transparent;
+        border: 1px solid #fff;
+        
+}
+.circle[active="true"]{
+        background: #fff;
+        border: 1px solid transparent;
+}
+
+.carousel_text{
+    transition: 0.3s;
+}
+.carousel_text[active="true"]{
+    height:auto;
+    padding:20px 20px;
+    margin-bottom:20px;
+    opacity:1;
+}
+.carousel_text[active="false"]{
+    height:0px;
+    overflow: hidden;
+    opacity:0;
+    padding: 0px;
+margin-bottom:0px;
+}
+.carousel_text h1{
+    margin:0px 0px;
+}
+.carousel_text a{
+    font-weight:bold;
+    text-decoration: none;
+    
+}
+.carousel_text p{
+    font-size:20px;
+}
+.horizontal-list{
+    width:100%;
+    float:left;
+    background: transparent;
+}
+.horizontal-list h2{
+    float: left;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+.horizontal-list .cards{
+    width:100%;
+    float: left;
+}
+
+.horizontal-list .texter{
+    float: left;
+    width: 100%;
+}
+.horizontal-list p,.horizontal-list h3{
+    text-align: center;
+}
+.horizontal-list .card button{
+    width: 100%;
+    padding: 10px 00px;
+}
+.vertical-list{
+    width:100%;
+    float:left;
+    background: transparent;   
+}
+.vertical-list .cards{
+    width:100%;
+    float:left; 
+}
+.vertical-list .card{
+    width:100%;
+    float:left; 
+}
+.vertical-list h3,.vertical-list p{
+    padding-left: 10px;
+    width: auto;
+}
+.vertical-list .card button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    float: right;
+    margin-right: 20px;
+}
+.card{
+    float: left;
+    margin: 5px;
+    overflow: hidden;
+}
+.card a{
+    text-decoration: none;
+}
+.card img{
+    float: left;
+}
+.card h3{
+    color: #000 ;
+ 
+}
+.card p{
+    color: #555;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.card button{;
+    
+}
+
+.bottom{
+    margin-top:30px;
+    padding: 20px 0px;
+   width:100%;
+    float:left;
+}
+.bottom .fa{
+    margin-bottom:20px;
+}
+.bottom h3{
+    margin-top:0px;
+padding-left: 20px;
+
+}
+.bottom .fa a span{
+    transition: 0.3s
+}
+.bottom .fa a{
+    font-size: 50px;
+    margin-left: 10px;
+    
+}
+.bottom .text li{
+     padding:5px 0px;
+}
+.bottom .text ul{
+  list-style-type: none;
+  margin-left:30px;
+  padding: 0;
+}
+.bottom .text a{
+    font-size: 20px;
+    transition: 0.1s;
+   
+}
+
+@media(max-width:992px){
+
+    .image,.desc{width: 100%;}
+    .desc{height:auto;}
+    .carousel_container{
+    margin-bottom:300px;
+    }
+    .card[last="true"]{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .body[at="id"]{
+        padding:0px;
+    }
+
+    .slideToggle,.popup,.searchToggle{
+        display: block;
+    }
+    .Pname{margin-left: 0px;}
+    .options{
+        transition-delay:0.5s;
+        padding: 10px;
+        margin-left:-20px;
+        float:right;
+        position:fixed;
+        margin-top: 40px;
+        width: 100%;
+        height:100%;
+    }
+    .options[display="none"]{
+        opacity:0;
+        display:none;}
+    .options[display="block"]{
+        opacity:1;
+        display:block;}
+    .searchBox  {
+    float: left;
+    width: 80%;
+    }
+    .searchCon .fa-arrow-left{
+        float:left;
+        display: block;
+        width:30px;
+        font-size:25px;
+    }
+    .searchCon{
+    padding:15px;
+    left:0; 
+    top:0; 
+    position: fixed;
+    width: 100%;
+    }
+    
+    .searchCon[display="none"]{
+        display:none;}
+    .searchCon[display="block"]{
+        display:block;}
+    .popbase{
+        overflow: hidden;
+        padding:5px 10px 10px 10px;
+        float: right;
+        width: 110px;
+        transition: 0.5s;
+        margin-right:40px;
+    }
+    .options a{
+        transition:0.3s;
+        padding:10px 2px;
+        width: 100%;
+    }
+    .body{
+        left:0;
+        margin-left: 0px;
+        }
+    .carousel_container {
+        width: calc(100%-10px);
+        height:auto;
+        margin:5px;
+}
+        
+    .slidenav[expand="false"]{
+        overflow: scroll;
+        width: 0px;}
+    .slidenav[expand="true"]{  
+        width: 100%;
+    }
+    .slidenav a{
+        padding: 8px 20px;
+        width:88%;
+        text-align: center;
+    }
+    
+    .hidenable{
+        display: none;
+    }
+    .body .form{
+    float:left;
+    margin-right:0px;
+    margin-top:0px;
+    padding:40px 0px;
+    height:100vh;
+    width:100vw  ;
+    transition: 0.3s;
+    border-radius: 0px;
+}
+#Login form,#register form{
+ margin:0px 20px;
+float: none;
+}
+.card img{
+    float: left;
+}
+.card h3{
+    width: 50%;
+    float: left;
+}
+.card p{
+    width: 50%;
+    float: left;
+}
+
+.outer{
+    padding-left:30px;
+    padding-right:30px;
+}
+.form form input{
+    width:80vw;
+}
+}
